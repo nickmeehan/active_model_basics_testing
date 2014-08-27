@@ -30,4 +30,5 @@ PLATFORMS
 DEPENDENCIES
   activemodel!
   activesupport!
+  minitest
   rake

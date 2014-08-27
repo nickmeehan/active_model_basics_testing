@@ -6,3 +6,4 @@ git 'git://github.com/rails/rails.git' do
 end
 
 gem 'rake'
+gem 'minitest'
