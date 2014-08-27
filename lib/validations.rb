@@ -20,4 +20,9 @@ p person.valid? == false                # => true
 person.email = 'me@vishnuatrai.com'
 p person.valid? == true                 # => true
 person.token = nil
-p person.valid?                         # => raises ActiveModel::StrictValidationFailed
+
+begin
+  p person.valid?                       # => raises ActiveModel::StrictValidationFailed
+rescue StandardError => e
+  p e.inspect == "#<ActiveModel::StrictValidationFailed: Token can't be blank>"   # => true
+end
