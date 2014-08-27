@@ -1,0 +1,31 @@
+GIT
+  remote: git://github.com/rails/rails.git
+  revision: 37f884b4fb90eb69e853a4e6328dffebc3f14478
+  specs:
+    activemodel (4.2.0.alpha)
+      activesupport (= 4.2.0.alpha)
+      builder (~> 3.1)
+    activesupport (4.2.0.alpha)
+      i18n (>= 0.7.0.beta1, < 0.8)
+      json (~> 1.7, >= 1.7.7)
+      minitest (~> 5.1)
+      thread_safe (~> 0.1)
+      tzinfo (~> 1.1)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    builder (3.2.2)
+    i18n (0.7.0.beta1)
+    json (1.8.1)
+    minitest (5.4.0)
+    thread_safe (0.3.4)
+    tzinfo (1.2.2)
+      thread_safe (~> 0.1)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  activemodel!
+  activesupport!
