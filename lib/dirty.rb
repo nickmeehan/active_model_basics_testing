@@ -2,8 +2,6 @@ require 'minitest/autorun'
 require 'bundler'
 Bundler.require
 
-require 'active_model'
- 
 class Person
   include ActiveModel::Dirty
   define_attribute_methods :first_name, :last_name
