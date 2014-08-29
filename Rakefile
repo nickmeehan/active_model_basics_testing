@@ -1,7 +1,4 @@
 require 'rake/testtask'
-require 'rubygems/package_task'
-
-test_files = Dir.glob('test/**/*_test.rb')
 
 desc "Default Task"
 task :default => :test
@@ -9,7 +6,7 @@ task :default => :test
 # Run the unit tests
 Rake::TestTask.new do |t|
   t.libs << 'test'
-  t.test_files = test_files
+  t.test_files = Dir.glob('test/**/*_test.rb')
 
   t.warning = true
   t.verbose = true
