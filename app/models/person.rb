@@ -2,7 +2,11 @@ require 'bundler'
 Bundler.require
 
 class Person
-  include ActiveModel::Model
+
+  def initialize(module_choice = nil)
+    self.class.send(:include, module_choice) if !!module_choice
+  end
+  
   extend ActiveModel::Translation
 end
 

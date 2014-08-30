@@ -3,8 +3,7 @@ require 'test_helper'
 class AttributeMethodsTest < Minitest::Test
 
   def setup
-    @person = Person.new
-    @person.extend(AttributeMethods)
+    @person = Person.new(AttributeMethods)
   end
 
   def test_that_person_age_is_highest

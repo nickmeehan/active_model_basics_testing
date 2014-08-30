@@ -21,3 +21,9 @@ module AttributeMethods
   end
  
 end
+
+# person = Person.new
+# person.age = 110
+# person.age_highest? == true   # true
+# p person.reset_age == 0         # true
+# p person.age_highest? == false  # true
