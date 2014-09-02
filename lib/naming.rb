@@ -1,10 +1,10 @@
-# require 'minitest/autorun'
-# require 'bundler'
-# Bundler.require
+require 'active_support/concern'
 
-# class Person
-#   extend ActiveModel::Naming
-# end
+
+module Naming
+  extend ActiveSupport::Concern
+  extend ActiveModel::Naming
+end
 
 
  
