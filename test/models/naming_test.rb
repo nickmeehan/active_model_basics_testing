@@ -2,6 +2,10 @@ require 'test_helper'
 
 class TestNaming < MiniTest::Test
 
+  def setup
+    Person.send(:include, Naming)
+  end
+
   def test_that_name_of_model_name_is_in_fact_itself
     assert_equal "Person", Person.model_name.name
   end

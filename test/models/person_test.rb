@@ -1,6 +1,6 @@
 require 'test_helper'
  
-class PersonTest < ActiveSupport::TestCase
+class TestPerson < ActiveSupport::TestCase
   include ActiveModel::Lint::Tests
  
   def setup

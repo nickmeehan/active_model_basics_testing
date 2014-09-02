@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class ValidationsTest < Minitest::Test
+class TestValidations < Minitest::Test
 
   def setup
     @person = Person.new(Validations)

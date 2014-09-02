@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class ConversionTest < Minitest::Test
+class TestConversion < Minitest::Test
 
   def setup
     @person = Person.new

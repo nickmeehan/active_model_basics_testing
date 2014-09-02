@@ -1,6 +1,6 @@
 require 'test_helper'
  
-class AttributeMethodsTest < Minitest::Test
+class TestAttributeMethods < Minitest::Test
 
   def setup
     @person = Person.new(AttributeMethods)

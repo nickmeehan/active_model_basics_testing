@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class DirtyTest < Minitest::Test
+class TestDirty < Minitest::Test
 
   def setup
     @person = Person.new(Dirty)
