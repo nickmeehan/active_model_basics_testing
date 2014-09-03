@@ -4,13 +4,14 @@ module AttributeMethods
   extend ActiveSupport::Concern
   include ActiveModel::AttributeMethods
 
-  attr_accessor :age
  
   included do
+    attr_accessor :age
+    
     attribute_method_prefix 'reset_'
     attribute_method_suffix '_highest?'
     define_attribute_methods 'age'
-  end  
+  end
 
   def reset_attribute(attribute)
     send("#{attribute}=", 0)
