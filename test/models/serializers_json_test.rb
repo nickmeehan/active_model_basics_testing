@@ -1,3 +1,5 @@
+require 'test_helper'
+
 class TestSerializersJson < MiniTest::Test
 
   def setup

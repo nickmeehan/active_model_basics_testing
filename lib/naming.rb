@@ -3,7 +3,9 @@ require 'active_support/concern'
 
 module Naming
   extend ActiveSupport::Concern
-  extend ActiveModel::Naming
+  included do
+    extend ActiveModel::Naming
+  end
 end
 
 

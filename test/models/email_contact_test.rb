@@ -1,3 +1,5 @@
+require 'test_helper'
+
 class TestEmailContact < MiniTest::Test
 
   def setup

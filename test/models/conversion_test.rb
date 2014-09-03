@@ -3,8 +3,7 @@ require 'test_helper'
 class TestConversion < Minitest::Test
 
   def setup
-    @person = Person.new
-    @person.extend(Conversion)
+    @person = Person.new(Conversion)
   end
 
   def test_that_person_to_model_is_person
