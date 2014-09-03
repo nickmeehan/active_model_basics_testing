@@ -1,4 +1,6 @@
-## Active Model Basics Testing
+## Active Model Basics Testing 
+
+[![Build Status](https://travis-ci.org/nickmeehan/active_model_basics_testing.png)](https://travis-ci.org/nickmeehan/active_model_basics_testing)
 
 This repo is to test the functionality of the newest release of Active Model for Rails 4.2.0.beta1.
 
