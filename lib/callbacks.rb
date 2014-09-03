@@ -17,7 +17,7 @@ module Callbacks
   end
  
   def reset_me
-    p 'I ran in reset_me when update was called'
     # This method is called when update is called on an object as a before_update callback is defined.
+    p 'I ran in reset_me when update was called'
   end
 end

@@ -1,7 +1,3 @@
-# require 'minitest/autorun'
-# require 'bundler'
-# Bundler.require
-
 module Serialization
   include ActiveModel::Serialization
  
