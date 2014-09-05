@@ -1,4 +1,5 @@
 require 'test_helper'
+require File.expand_path('../../../lib/model', __FILE__)
 
 class TestEmailContact < MiniTest::Test
 

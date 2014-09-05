@@ -1,4 +1,5 @@
 require 'test_helper'
+require File.expand_path('../../../lib/callbacks', __FILE__)
 
 class TestCallbacks < MiniTest::Test
 

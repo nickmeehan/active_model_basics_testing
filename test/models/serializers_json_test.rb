@@ -1,4 +1,5 @@
 require 'test_helper'
+require File.expand_path('../../../lib/serializers_json', __FILE__)
 
 class TestSerializersJson < MiniTest::Test
 

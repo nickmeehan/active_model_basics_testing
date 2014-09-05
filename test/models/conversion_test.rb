@@ -1,4 +1,5 @@
 require 'test_helper'
+require File.expand_path('../../../lib/conversion', __FILE__)
 
 class TestConversion < Minitest::Test
 

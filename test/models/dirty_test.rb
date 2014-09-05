@@ -1,4 +1,5 @@
 require 'test_helper'
+require File.expand_path('../../../lib/dirty', __FILE__)
 
 class TestDirty < Minitest::Test
 

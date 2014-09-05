@@ -1,4 +1,5 @@
 require 'test_helper'
+require File.expand_path('../../../lib/serializers_xml', __FILE__)
 
 class TestSerializersXml < MiniTest::Test
 

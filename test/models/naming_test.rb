@@ -1,4 +1,5 @@
 require 'test_helper'
+require File.expand_path('../../../lib/naming', __FILE__)
 
 class TestNaming < MiniTest::Test
 

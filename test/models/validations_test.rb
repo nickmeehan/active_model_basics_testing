@@ -1,4 +1,5 @@
 require 'test_helper'
+require File.expand_path('../../../lib/validations', __FILE__)
 
 class TestValidations < Minitest::Test
 

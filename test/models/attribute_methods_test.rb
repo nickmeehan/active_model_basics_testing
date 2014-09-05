@@ -1,4 +1,5 @@
 require 'test_helper'
+require File.expand_path('../../../lib/attribute_methods', __FILE__)
  
 class TestAttributeMethods < Minitest::Test
 

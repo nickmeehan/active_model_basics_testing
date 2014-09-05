@@ -1,4 +1,8 @@
 require 'test_helper'
+require 'i18n'
+I18n.load_path += Dir[Dir.pwd + '/config/locales/app.pt-BR.yml']
+I18n.locale = 'pt-BR'
+require File.expand_path('../../../lib/translations', __FILE__)
 
 class TestTranslations < MiniTest::Test
 
