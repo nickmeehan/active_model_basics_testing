@@ -1,10 +1,10 @@
 require 'test_helper'
-require File.expand_path('../../../lib/attribute_methods', __FILE__)
+require 'person_ext/attribute_methods'
  
 class TestAttributeMethods < Minitest::Test
 
   def setup
-    @person = Person.new(AttributeMethods)
+    @person = Person.new(PersonExt::AttributeMethods)
   end
 
   def test_that_person_age_is_highest

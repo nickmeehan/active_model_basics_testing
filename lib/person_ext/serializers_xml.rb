@@ -1,23 +1,24 @@
 require 'active_support/concern'
 
 
-module SerializersXml
-  extend ActiveSupport::Concern
-  include ActiveModel::Serializers::Xml
- 
-  attr_accessor :name
- 
-  def attributes=(hash)
-    hash.each do |key, value|
-      send("#{key}=", value)
+module PersonExt
+  module SerializersXml
+    extend ActiveSupport::Concern
+    include ActiveModel::Serializers::Xml
+   
+    attr_accessor :name
+   
+    def attributes=(hash)
+      hash.each do |key, value|
+        send("#{key}=", value)
+      end
+    end
+   
+    def attributes
+      {'name' => nil}
     end
   end
- 
-  def attributes
-    {'name' => nil}
-  end
 end
-
 
 # # person = Person.new
 # # p person.to_xml == "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<person>\n  <name nil=\"true\"/>\n</person>\n"  # => true

@@ -1,25 +1,26 @@
 require 'active_support/concern'
 
 
-module SerializersJson
-  extend ActiveSupport::Concern
-  include ActiveModel::Serializers::JSON
- 
-  attr_accessor :name
-  
-  included do
-    def attributes=(hash)
-      hash.each do |key, value|
-        send("#{key}=", value)
-      end
-    end
+module PersonExt
+  module SerializersJson
+    extend ActiveSupport::Concern
+    include ActiveModel::Serializers::JSON
    
-    def attributes
-      {'name' => nil}
+    attr_accessor :name
+    
+    included do
+      def attributes=(hash)
+        hash.each do |key, value|
+          send("#{key}=", value)
+        end
+      end
+     
+      def attributes
+        {'name' => nil}
+      end
     end
   end
 end
-
 
 
 # # person = Person.new

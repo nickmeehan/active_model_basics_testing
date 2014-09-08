@@ -1,19 +1,19 @@
 require 'active_support/concern'
 
-module Validations
-  extend ActiveSupport::Concern
-  include ActiveModel::Validations
+module PersonExt
+  module Validations
+    extend ActiveSupport::Concern
+    include ActiveModel::Validations
 
-  attr_accessor :name, :email, :token
+    attr_accessor :name, :email, :token
 
-  included do
-    validates :name, presence: true
-    validates_format_of :email, with: /\A([^\s]+)((?:[-a-z0-9]\.)[a-z]{2,})\z/i
-    validates! :token, presence: true
+    included do
+      validates :name, presence: true
+      validates_format_of :email, with: /\A([^\s]+)((?:[-a-z0-9]\.)[a-z]{2,})\z/i
+      validates! :token, presence: true
+    end
   end
-
 end
-
 
  
 # person = Person.new

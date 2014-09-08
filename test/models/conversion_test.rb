@@ -1,10 +1,10 @@
 require 'test_helper'
-require File.expand_path('../../../lib/conversion', __FILE__)
+require 'person_ext/conversion'
 
 class TestConversion < Minitest::Test
 
   def setup
-    @person = Person.new(Conversion)
+    @person = Person.new(PersonExt::Conversion)
   end
 
   def test_that_person_to_model_is_person

@@ -1,10 +1,10 @@
 require 'test_helper'
-require File.expand_path('../../../lib/dirty', __FILE__)
+require 'person_ext/dirty'
 
 class TestDirty < Minitest::Test
 
   def setup
-    @person = Person.new(Dirty)
+    @person = Person.new(PersonExt::Dirty)
   end
 
   # QUERYING OBJECT DIRECTLY FOR ITS LIST OF ALL CHANGED ATTRIBUTES

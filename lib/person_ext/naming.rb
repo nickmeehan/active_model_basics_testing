@@ -1,10 +1,11 @@
 require 'active_support/concern'
 
-
-module Naming
-  extend ActiveSupport::Concern
-  included do
-    extend ActiveModel::Naming
+module PersonExt
+  module Naming
+    extend ActiveSupport::Concern
+    included do
+      extend ActiveModel::Naming
+    end
   end
 end
 

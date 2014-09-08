@@ -1,10 +1,10 @@
 require 'test_helper'
-require File.expand_path('../../../lib/validations', __FILE__)
+require 'person_ext/validations'
 
 class TestValidations < Minitest::Test
 
   def setup
-    @person = Person.new(Validations)
+    @person = Person.new(PersonExt::Validations)
     @person.token = "2b1f325"
   end
 

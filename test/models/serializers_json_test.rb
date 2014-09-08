@@ -1,10 +1,10 @@
 require 'test_helper'
-require File.expand_path('../../../lib/serializers_json', __FILE__)
+require 'person_ext/serializers_json'
 
 class TestSerializersJson < MiniTest::Test
 
   def setup
-    @person = Person.new(SerializersJson)
+    @person = Person.new(PersonExt::SerializersJson)
     @json = { name: "Bob" }.to_json
   end
 

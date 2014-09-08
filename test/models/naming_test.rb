@@ -1,10 +1,10 @@
 require 'test_helper'
-require File.expand_path('../../../lib/naming', __FILE__)
+require 'person_ext/naming'
 
 class TestNaming < MiniTest::Test
 
   def setup
-    Person.send(:include, Naming)
+    Person.send(:include, PersonExt::Naming)
   end
 
   def test_that_name_of_model_name_is_in_fact_itself

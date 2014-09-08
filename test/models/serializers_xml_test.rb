@@ -1,10 +1,10 @@
 require 'test_helper'
-require File.expand_path('../../../lib/serializers_xml', __FILE__)
+require 'person_ext/serializers_xml'
 
 class TestSerializersXml < MiniTest::Test
 
   def setup
-    @person = Person.new(SerializersXml)
+    @person = Person.new(PersonExt::SerializersXml)
     @xml = { name: "Bob" }.to_xml
   end
 

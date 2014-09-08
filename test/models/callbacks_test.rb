@@ -1,10 +1,10 @@
 require 'test_helper'
-require File.expand_path('../../../lib/callbacks', __FILE__)
+require 'person_ext/callbacks'
 
 class TestCallbacks < MiniTest::Test
 
   def setup
-    @person = Person.new(Callbacks)
+    @person = Person.new(PersonExt::Callbacks)
   end
 
   def test_that_print_statements_are_executed

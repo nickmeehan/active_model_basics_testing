@@ -1,10 +1,10 @@
 require 'test_helper'
-require File.expand_path('../../../lib/serialization', __FILE__)
+require 'person_ext/serialization'
 
 class TestSerialization < MiniTest::Test
 
   def setup
-    @person = Person.new(Serialization)
+    @person = Person.new(PersonExt::Serialization)
   end
 
   def test_that_serializable_hash_returns_correct_value_after_initialization

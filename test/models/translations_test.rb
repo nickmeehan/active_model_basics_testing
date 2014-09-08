@@ -2,12 +2,12 @@ require 'test_helper'
 require 'i18n'
 I18n.load_path += Dir[Dir.pwd + '/config/locales/app.pt-BR.yml']
 I18n.locale = 'pt-BR'
-require File.expand_path('../../../lib/translations', __FILE__)
+require 'person_ext/translations'
 
 class TestTranslations < MiniTest::Test
 
   def setup
-    Person.send(:include, Translations)
+    Person.send(:include, PersonExt::Translations)
   end
 
   def test_that_human_attribute_name_is_correct

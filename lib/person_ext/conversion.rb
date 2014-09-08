@@ -1,15 +1,17 @@
 require 'active_support/concern'
 
-module Conversion
-  extend ActiveSupport::Concern
-  include ActiveModel::Conversion
- 
-  def persisted?
-    false
-  end
- 
-  def id
-    nil
+module PersonExt
+  module Conversion
+    extend ActiveSupport::Concern
+    include ActiveModel::Conversion
+   
+    def persisted?
+      false
+    end
+   
+    def id
+      nil
+    end
   end
 end
 
